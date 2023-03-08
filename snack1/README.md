@@ -9,6 +9,6 @@ Generiamo e stampiamo in console la lista per i segnaposto.
 
 1. Creo un array con la lista dei vip.
 
-2. Utilizzo map per creare un nuovo array contenente un oggetto per ogni vip con le informazioni richieste. A map passo due variabili, una per gli elementi della lista e uno per l'indice.
+2. Utilizzo map per creare un nuovo array contenente un oggetto per ogni vip con le informazioni richieste. A map passo due variabili, una per l'elemento corrente e uno per l'indice.
 
 3. Stampo il nuovo array in console.
