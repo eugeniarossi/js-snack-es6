@@ -1,13 +1,16 @@
-const vipList = ['Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'Fedez', 'George Clooney', 'Amal Clooney', 'Maneskin'];
+'use strict';
 
+// Definisco un array con la lista vip
+const vipList = ['Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'Fedez', 'George Clooney', 'Amal Clooney', 'Maneskin'];
 console.log({vipList});
 
-const guestsList = vipList.map((vip, index) => { 
+// Creo un nuovo array usando la funzione map
+const guestsList = vipList.map((vip, index) => {  // oppure: const guestsList = vipList.map(function(vip, index){
     return {
         tableName: 'Tavolo Vip',
         guestName: vip,
         nPlace: index + 1
     }
 });
-
-console.log(guestsList);
+// Stampo il nuovo array in console
+console.log({guestsList});
