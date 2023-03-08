@@ -18,3 +18,10 @@ Id  Name                Grades
 
 ***
 
+1. Creo un array di oggetti con un oggetto per ogni studente e le proprietà id, studentName e grades. 
+
+2. Creo un array con i nomi degli studenti scritti in maiuscolo utilizzando la funzione map e restituendo solo la proprietà studentName di ogni oggetto in uppercase. 
+
+3. Creo un array con gli studenti che hanno un totale di voti superiore a 70 utilizzando la funzione filter e restituendo solo quegli oggetti la cui proprietà grades ha un valore superiore a 70.
+
+4. Creo un array con gli studenti che hanno un totale di voti superiore a 70 e un id superiore a 120, utilizzando la funzione filter e restituendo solo quegli oggetti la cui proprietà grades ha un valore superiore a 70 e la proprietà id ha un valore superiore a 120. 
