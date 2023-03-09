@@ -9,3 +9,10 @@ Stampare in pagina oltre che in console!
 
 ***
 
+1. Creo un array di oggetti di squadre di calcio. Proprietà: nome, punti fatti, falli subiti.
+
+2. Sostituisco il valore 0 delle proprietà con una funzione che generi numeri random. 
+
+3. Utilizzando la destrutturazione creo un array di oggetti con proprietà nome e falli subiti. 
+
+4. Stampo in console l'array. 
