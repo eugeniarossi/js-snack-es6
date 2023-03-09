@@ -14,3 +14,8 @@ const guestsList = vipList.map((vip, index) => {  // oppure: const guestsList = 
 });
 // Stampo il nuovo array in console
 console.log({guestsList});
+
+/* ALTRE SOLUZIONI MENO RAPIDE: 
+forEach
+for normale
+*/

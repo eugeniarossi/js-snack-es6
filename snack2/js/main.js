@@ -41,13 +41,13 @@ const studentsList = [
 console.log(studentsList);
 
 // Creo un array con i nomi degli studenti scritti in maiuscolo
-const upperCaseStudents = studentsList.map((student) => {
+const upperCaseStudents = studentsList.map((student) => {  //OPPURE: const upperCaseStudents = studentsList.map(student => student.studentName.toUpperCase());
     return student.studentName.toUpperCase();
 });
 console.log({upperCaseStudents});
 
 // Creo un array degli studenti con grades > 70
-const highRate = studentsList.filter((student) => {
+const highRate = studentsList.filter((student) => { // (Si può usare anche forEach)
     return student.grades > 70;
 })
 console.log({highRate});
