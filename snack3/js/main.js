@@ -23,19 +23,17 @@ const bikes = [
         height: 8.7
     }
 ];
-/* ALTERNATIVE
-const heightsList = bikes.map(bike => bike.height);
-console.log(heightsList);
-
-const lighterHeight = Math.min(...heightsList);
-console.log({lighterHeight});
-*/
-
 //Definisco un array con la lista degli elementi peso 
 const heightsList = bikes.map(bike => bike.height);
 // Definisco il valore minore
 const lighterHeight = Math.min(...heightsList);
 
+/* ALTERNATIVE
+const heightsList = bikes.map(bike => bike.height);
+console.log(heightsList);
+
+const lighterHeight = Math.min(...heightsList);
+console.log({lighterHeight}); */
 
 // Stampo in console il nome della bici con peso minore
 bikes.forEach(bike => {
@@ -51,5 +49,4 @@ const lighterBike = bikes.filter(bike => {
     return (height === lighterHeight);
 })
 const {bikeName, height} = lighterBike[0];
-console.log(`La bici più leggera è la ${bikeName} (peso: ${height})`);
-*/
+console.log(`La bici più leggera è la ${bikeName} (peso: ${height})`); */
