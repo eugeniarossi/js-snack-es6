@@ -55,9 +55,15 @@ const teams = [
         fouls: 0
     }
 ];
-// Sostituisco i valori 0 con una funzione che generi numeri random
-teams.forEach(team => {
-    team.score = randomNumber(1, 10);
-    team.fouls = randomNumber(1, 10);
+//Creo un array di oggetti con proprietà nome e falli subiti
+const newTeams = teams.map(team => {
+    let {teamName, score, fouls} = team;
+    score = randomNumber(1, 10);
+    fouls = randomNumber(1, 10);
+    return {
+        teamName,
+        fouls
+    }
 });
-console.log({teams});
+// Stampo in console
+console.log(newTeams);
