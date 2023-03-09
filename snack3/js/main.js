@@ -30,10 +30,7 @@ const lighterHeight = Math.min(...heightsList);
 
 /* ALTERNATIVE
 const heightsList = bikes.map(bike => bike.height);
-console.log(heightsList);
-
-const lighterHeight = Math.min(...heightsList);
-console.log({lighterHeight}); */
+const lighterHeight = Math.min(...heightsList); */
 
 // Stampo in console il nome della bici con peso minore
 bikes.forEach(bike => {
