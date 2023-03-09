@@ -10,4 +10,4 @@ Stampare in console la bici con peso minore utilizzando destructuring e template
 
 2. Creo un array delle proprietà peso di tutte le bici usando map e determino il valore minore. 
 
-3. Utilizzando forEach oppure filter attraverso l'array delle bici e stampo l'oggetto con la proprietà peso identica al valore minore. 
+3. Utilizzando forEach oppure filter attraverso l'array delle bici e stampo l'oggetto con la proprietà peso identica al valore minore utilizzando template literal.
