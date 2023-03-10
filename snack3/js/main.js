@@ -23,23 +23,29 @@ const bikes = [
         height: 8.7
     }
 ];
-//Definisco un array con la lista degli elementi peso 
-const heightsList = bikes.map(bike => bike.height);
-// Definisco il valore minore
-const lighterHeight = Math.min(...heightsList);
+
+if (bikes.length === 0) {
+    console.log(`Non ho bici`);
+} else {
+    //Definisco un array con la lista degli elementi peso 
+    const heightsList = bikes.map(bike => bike.height);
+    // Definisco il valore minore
+    const lighterHeight = Math.min(...heightsList);
+
+    // Stampo in console il nome della bici con peso minore
+    bikes.forEach(bike => {
+        const {height, bikeName} = bike;
+        if(height === lighterHeight) {
+            console.log(`La bici più leggera è la ${bikeName} (peso: ${height})`);
+        }
+    });
+}
 
 /* ALTERNATIVE
 const heightsList = bikes.map(bike => bike.height);
 const lighterHeight = Math.min(...heightsList); */
 
-// Stampo in console il nome della bici con peso minore
-bikes.forEach(bike => {
-    const {height} = bike;
-    if(height === lighterHeight) {
-        const {bikeName, height} = bike;
-        console.log(`La bici più leggera è la ${bikeName} (peso: ${height})`);
-    }
-});
+
 /*  ALTERNATIVE
 const lighterBike = bikes.filter(bike => {
     const {height} = bike;

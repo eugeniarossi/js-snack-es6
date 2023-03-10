@@ -57,19 +57,18 @@ const teams = [
 ];
 // Definisco un array per gli elementi fouls
 let foulsList = [];
+teams.forEach(team => {
+    team.score = randomNumber(1, 10);
+    team.fouls = randomNumber(1, 10);
+})
+console.log({teams});
 //Creo un array di oggetti con proprietà nome e falli subiti
-const newTeams = teams.map(team => {
-    let {teamName, score, fouls} = team;
-    score = randomNumber(1, 10);
-    fouls = randomNumber(1, 10);
+const newTeams = teams.map(({fouls, teamName}) => {
     foulsList.push(fouls);
-    return {
-        teamName,
-        fouls
-    }
+    return {teamName, fouls}
 });
 // Stampo in console
-console.log(newTeams);
+console.log({newTeams});
 // Stabilisco quale squadra ha subito più falli
 const maxFouls = Math.max(...foulsList);
 const maxFoulsTeam = newTeams.filter(team => {
