@@ -3,7 +3,7 @@
 /***********
  * Functions
  */
-
+// Definisco una funzione per generare numeri random
 function randomNumber(min, max) {
     return Math.floor((Math.random() * max) + min);
 }
@@ -57,6 +57,7 @@ const teams = [
 ];
 // Definisco un array per gli elementi fouls
 let foulsList = [];
+// Assegno ai valori 0 dei numeri random
 teams.forEach(team => {
     team.score = randomNumber(1, 10);
     team.fouls = randomNumber(1, 10);
